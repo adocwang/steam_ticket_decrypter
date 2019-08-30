@@ -14,7 +14,7 @@ So, I warped things in a command executable which you can call and get output in
 
 usage:
 
-1. cd to your arch target, then execute sh ./make.sh to build decoder named main
+1. cd to your target platform. If there is no main (not main.cpp) here, execute sh ./make.sh to build decrypter named main to your target platform.
 
 2. run ./main yourAppId yourSteamworksSdkKey SteamEncryptedAppTicket
 
