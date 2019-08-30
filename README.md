@@ -5,12 +5,17 @@ Steam provides 3 ways to get userId of the player in who's running you game.
 3. Get an encrypted ticket which client of your game requests from steam. Then you decrypt it with an sdkKey you setted in https://partner.steamgames.com/apps/sdkauth/{yourAppId}
 
 Way 1 is the fastest way but unfase.
+
 Way 2 mabye the most safe way, but realy slow, because you need to wait an http request to finish.
+
 Way 3 maybe safe enough and fast enough for most games. But only C++ libs are provided. If you wan to use this way in servers writen in other languages like php, js, java... It's a lot of work you need to do.
+
 So, I warped things in a command executable which you can call and get output in a lot of languages.
 
 usage:
+
 1. cd to your arch target, then execute sh ./make.sh to build decoder named main
+
 2. run ./main yourAppId yourSteamworksSdkKey SteamEncryptedAppTicket
 
 both yourSteamworksSdkKey and SteamEncryptedAppTicket are using HexString like 1b4b8a2fe2f33ca4532a02653f7f68fd130b3d30ba2828424267848f0b19cb42....
