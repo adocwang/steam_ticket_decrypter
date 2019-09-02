@@ -4,10 +4,6 @@
 #include "steam/steamencryptedappticket.h"
 
 using namespace std;
-/**
- *encrypted ticket length:126, data:080110bb9dc8880c180020462a70f000fe20e500c96a18bd477245c1ca6b8909227d36371773cad7035549ffc4452205116f4bec8ae51ec5c9a9189f2b63b8419b2fcca2308c43343899d27753a69b98bc2c2a2e85a2a851a484a9e9a687ae940f78447381943aa61317f3e1b71007264ca3ece3bae028ef6bc411ff19ab 
- * 
- **/
 
 void error(int code, string error){
     printf("{\"code\":%d,\"error\":\"%s\",\"steam_id\":\"\"}", code, error.c_str());
